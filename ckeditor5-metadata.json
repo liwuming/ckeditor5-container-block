@@ -1,0 +1,28 @@
+{
+	"plugins": [
+		{
+			"name": "Code blocks",
+			"className": "CodeBlock",
+			"description": "Allows for inserting and editing of blocks of pre–formatted code with the programming language assigned.",
+			"docs": "features/code-blocks.html",
+			"path": "src/containerblock.js",
+			"uiComponents": [
+				{
+					"type": "Button",
+					"name": "containerBlock",
+					"iconPath": "theme/icons/containerblock.svg"
+				}
+			],
+			"htmlOutput": [
+				{
+					"elements": "blockquote"
+				},
+				{
+					"elements": "p",
+					"classes": "language-*",
+					"_comment": "By default, the language of the code block is represented as a CSS class prefixed by `language-`"
+				}
+			]
+		}
+	]
+}
