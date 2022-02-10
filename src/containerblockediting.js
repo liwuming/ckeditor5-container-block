@@ -38,6 +38,7 @@ export default class ContainerBlockEditing extends Plugin {
 
         editor.config.define('containerBlock', {
             containers: [
+                { container: 'normal', label: '' },
                 { container: 'success', label: 'success' },
                 { container: 'info', label: 'info' },
                 { container: 'warning', label: 'warning' },
